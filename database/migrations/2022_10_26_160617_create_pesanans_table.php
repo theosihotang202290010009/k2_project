@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('pesanans', function (Blueprint $table) {
             $table->id();
+            $table->string('kd_pesanan');
+            $table->string('status')->default(0);
+            $table->integer('total_harga');
+            $table->integer('kd_unik');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

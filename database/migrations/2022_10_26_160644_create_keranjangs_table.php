@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('keranjangs', function (Blueprint $table) {
             $table->id();
+            $table->integer('jumlah_pesanan');
+            $table->integer('total_harga');
+            $table->integer('produk_id');
+            $table->integer('pesananphp_id');
             $table->timestamps();
         });
     }

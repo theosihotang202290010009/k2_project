@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class keranjang extends Model
 {
-    use HasFactory;
+    public function produk()
+    {
+        return $this->belongsTo(Produk::class, 'produk_id', 'id');
+    }
+
+    public function pesanan()
+    {
+        return $this->belongsTo(Pesanan::class, 'pesananphp_id', 'id');
+    }
 }

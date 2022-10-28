@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('produks', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_pdk');
+            $table->integer('harga');
+            $table->boolean('ready_or_not')->default(true);
+            $table->float('berat')->default(0.25);
+            $table->string('gambar');
             $table->timestamps();
         });
     }
