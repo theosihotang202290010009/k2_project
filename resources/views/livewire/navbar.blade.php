@@ -7,8 +7,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
-          
-          
+
+
 
             <div cdiv class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
@@ -21,8 +21,8 @@
                             List Bakery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            @foreach($produks as $product)
-                            <li><a class="dropdown-item" href="#"> {{ $product->nama_pdk }}</a></li>
+                            @foreach($products as $produk)
+                            <li><a class="dropdown-item" href="#"> {{ $produk->nama_pdk }}</a></li>
                             @endforeach
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><hr class="dropdown-divider"></li>

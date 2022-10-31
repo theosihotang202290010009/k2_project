@@ -20,14 +20,14 @@ class ProductIndex extends Component
 
     public function render()
     {
-        if($this->search == null){
-            $products = Produk::where('nama_pdk', 'like', '%'.$this->search.'%')->paginate(8);
+        if($this->search){
+            $produks = Produk::where('nama_pdk', 'like', '%'.$this->search.'%')->paginate(6);
         }
         else{
-            $products = Produk::paginate(8);
+            $produks = Produk::paginate(6);
         }
         return view('livewire.product-index', [
-            'produks' => $products
+            'produks' => $produks
         ]);
     }
 }

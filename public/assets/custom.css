@@ -32,3 +32,11 @@
 .btn-dark{
     border-radius: 10px;
 }
+
+.bakerie img {
+    max-height: 100px;
+}
+
+.bakerie .card {
+    border-radius: 15px;
+}
