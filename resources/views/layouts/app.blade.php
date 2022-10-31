@@ -30,7 +30,7 @@
         <main class="py-4">
             @yield('content')
 
-        @include('layouts.footer')
+        @include('layouts.footer')a
         </main>
     </div>
 </body>
