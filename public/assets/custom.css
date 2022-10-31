@@ -18,3 +18,17 @@
 .row-foot{
     width: 100%;
 }
+
+.breadcrumb{
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb > .breadcrumb-item-active {
+    font-weight: bold;
+    color: black;
+}
+
+.btn-dark{
+    border-radius: 10px;
+}
