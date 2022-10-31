@@ -11,7 +11,7 @@ class ProductDetail extends Component
 
     public function mount($id)
     {
-        $productDetail = Produk::find($in);
+        $productDetail = Produk::find($id);
 
         if($productDetail) {
             $this->produk = $productDetail;
