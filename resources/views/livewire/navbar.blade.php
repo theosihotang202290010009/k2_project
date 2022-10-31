@@ -9,7 +9,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <!-- Left Side Of Navbar -->
+               <!-- Left Side Of Navbar -->s
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Home</a>
