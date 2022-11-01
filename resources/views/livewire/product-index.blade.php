@@ -18,7 +18,7 @@
 
         <div class="col-md-3">
             <div class="input-group mb-3">
-                <input wire:model="search" type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon1">
+                <input wire:model="search" type="text" class="form-control" placeholder="search" aria-label="search" aria-describedby="basic-addon1">
                     <span class="input-group-text" id="basic-addon1">
                         <i class="fas fa-search"></i>
                     </span>
@@ -51,11 +51,11 @@
                 </div>
             @endforeach
         </div>
-        <div class="col">
-            <div class="row">
-                {{ $produks->links() }}
+            <div class="col">
+                <div class="row">
+                    {{ $produks->links() }}
+                </div>
             </div>
-        </div>
     </section>
 </div>
 

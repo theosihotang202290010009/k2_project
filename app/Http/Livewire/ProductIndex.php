@@ -9,17 +9,18 @@ use Livewire\WithPagination;
 class ProductIndex extends Component
 {
     use WithPagination;
-
     public $search;
 
     protected  $updateQueryString= ['search'];
 
-    public function updatingSearch(){
-        $this->resetPage;
+    public function updatingSearch()
+    {
+        $this->resetPage();
     }
 
     public function render()
     {
+
         if($this->search){
             $produks = Produk::where('nama_pdk', 'like', '%'.$this->search.'%')->paginate(6);
         }
