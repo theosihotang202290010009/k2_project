@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Produk;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 
@@ -10,7 +11,7 @@ use function GuzzleHttp\Promise\all;
 
 class ProdukDetail extends Component
 {
-    public $produk;
+    public $produk, $jumlah_pesanan;
 
     public function mount($id)
     {
@@ -20,7 +21,18 @@ class ProdukDetail extends Component
             $this->produk = $produkDetail;
         }
     }
-    
+
+    public function masukkanKeranjang()
+    {
+        $this->validate([
+            'jumlah_pesanan' => 'required'
+        ]);
+
+        //Validasi Jika Belum Login
+        if(!Auth::user()) {
+            return redirect()->route('login');
+        }
+    }
 
     public function render()
     {

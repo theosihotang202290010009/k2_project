@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
 
     <meta charset="utf-8">
@@ -16,7 +17,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome-free-6.2.0-web/css/all.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 
 
@@ -24,18 +26,20 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
 
-    <livewire:scripts/>
-    <livewire:styles/>
+    <livewire:scripts />
+    <livewire:styles />
 </head>
+
 <body>
     <div id="app">
-        <livewire:navbar/>
+        <livewire:navbar />
 
         <main class="py-4">
             @yield('content')
 
-        @include('layouts.footer')
+            @include('layouts.footer')
         </main>
     </div>
 </body>
+
 </html>

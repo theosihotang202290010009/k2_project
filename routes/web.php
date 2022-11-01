@@ -19,4 +19,4 @@ Auth::routes();
 Route::get('/', App\Http\Livewire\Home::class)->name('home');
 Route::get('/products', App\Http\Livewire\ProductIndex::class)->name('products');
 Route::get('/products/{id}', App\Http\Livewire\ProdukDetail::class)->name('products.detail');
-
+Route::get('/products/add', App\Http\Livewire\ProdukDetail::class, 'masukkanKeranjang');

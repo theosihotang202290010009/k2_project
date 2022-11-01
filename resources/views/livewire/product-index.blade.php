@@ -54,7 +54,7 @@
         </div>
             <div class="col">
                 <div class="row">
-                    {{ $produks->links() }}
+                    {{$produks->links()}}
                 </div>
             </div>
     </section>
