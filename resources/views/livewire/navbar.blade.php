@@ -21,7 +21,7 @@
                             List Bakery
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            @foreach($products as $produk)
+                            @foreach($produks as $produk)
                             <li><a class="dropdown-item" href="#"> {{ $produk->nama_pdk }}</a></li>
                             @endforeach
                             <li><a class="dropdown-item" href="#">Another action</a></li>

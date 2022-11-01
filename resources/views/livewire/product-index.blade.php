@@ -18,14 +18,15 @@
 
         <div class="col-md-3">
             <div class="input-group mb-3">
-                <input wire:model="search" type="text" class="form-control" placeholder="search" aria-label="search" aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1">
-                        <i class="fas fa-search"></i>
-                    </span>
+                <input wire:model="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search"
+                aria-describedby="basic-addon1">
+                <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-search"></i>
+                </span>
+                </div>
             </div>
-
         </div>
-
     </div>
 
     <section class="bakeries mb-3">
@@ -43,7 +44,7 @@
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-12">
-                                    <a href="{{ route('products.detail', $produk->id) }}" class="btn btn-dark btn-block">Detail</a>
+                                    <a href="{{ route('products.detail', $produk->id) }}" class="btn btn-dark btn-block"> <i class="fas fa-eye">Detail</i></a>
                                 </div>
                             </div>
                         </div>

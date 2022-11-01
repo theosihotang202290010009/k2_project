@@ -40,3 +40,10 @@
 .bakerie .card {
     border-radius: 15px;
 }
+
+
+.gambar-produk img {
+    background-color: #f1f1f1;
+    border-width: 0;
+    border-radius: 15px;
+}

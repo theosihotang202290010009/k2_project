@@ -9,9 +9,9 @@ class Navbar extends Component
 {
     public function render()
     {
-        $products = Produk::all();
+        $produks = Produk::all();
         return view('livewire.navbar', [
-            'products' => $products
+            'produks' => $produks
         ]);
     }
 }
