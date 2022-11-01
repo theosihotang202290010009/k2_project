@@ -19,6 +19,13 @@
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
                     <!-- Authentication Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Cart <i class="fas fa-shopping-bag"></i>
+                            @if($jumlah_pesanan !== 0)
+                                <span class="badge bg-danger"> {{ $jumlah_pesanan }}</span>
+                            @endif
+                        </a>
+                    </li>
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
