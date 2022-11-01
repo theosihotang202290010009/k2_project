@@ -3,23 +3,29 @@
 namespace App\Http\Livewire;
 
 use App\Models\Produk;
+use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 
-class ProductDetail extends Component
+use function GuzzleHttp\Promise\all;
+
+class ProdukDetail extends Component
 {
     public $produk;
 
     public function mount($id)
     {
-        $productDetail = Produk::find($id);
+        $produkDetail = Produk::find($id);
 
-        if($productDetail) {
-            $this->produk = $productDetail;
+        if($produkDetail) {
+            $this->produk = $produkDetail;
         }
     }
 
+    $this->emit('masukKeranjang');
+
     public function render()
     {
-        return view('livewire.product-detail');
+
+        return view('livewire.produk-detail');
     }
 }
