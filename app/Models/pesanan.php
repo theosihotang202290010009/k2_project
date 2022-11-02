@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class pesanan extends Model
 {
+    protected $fillable = [
+            'kd_pesanan',
+            'status',
+            'total_harga',
+            'kd_unik',
+            'user_id',
+    ];
     public function keranjangs()
     {
         return $this->hasMany(Keranjang::class, 'pesananphp_id', 'id');

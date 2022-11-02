@@ -15,18 +15,6 @@
         <div class="col-md-9">
             <h2> List <strong>Bakery </strong></h2>
         </div>
-
-        <div class="col-md-3">
-            <div class="input-group mb-3">
-                <input wire:model="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search"
-                aria-describedby="basic-addon1">
-                <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">
-                    <i class="fas fa-search"></i>
-                </span>
-                </div>
-            </div>
-        </div>
     </div>
 
     <section class="bakeries mb-3">

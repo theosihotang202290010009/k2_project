@@ -14,6 +14,17 @@
         </div>
 
         <div class="row">
+            <div class="col-md-12">
+                @if (session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
+            </div>
+        </div>
+
+
+        <div class="row">
             <div class="col-md-6">
                 <div class="card gambar-produk">
                     <div class="card-body">
@@ -37,6 +48,7 @@
                 <div class="row">
                     <div class="col">
                         <form wire:submit.prevent="masukkanKeranjang">
+
                             <table class="table" style="border-top : hidden">
                                 <tr>
                                     <td>Berat</td>
